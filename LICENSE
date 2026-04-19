@@ -1,0 +1,213 @@
+Adnify 软件许可协议
+Adnify Software License Agreement
+
+版权所有 (c) 2025-present adnaan (adnaan.worker@gmail.com)
+Copyright (c) 2025-present adnaan (adnaan.worker@gmail.com)
+
+项目地址 / Project URL:
+  - https://github.com/adnaan-worker/adnify
+  - https://gitee.com/adnaan/adnify
+
+================================================================================
+                              许可条款 / LICENSE TERMS
+================================================================================
+
+一、定义 / 1. Definitions
+-------------------------
+1. "本软件" 指 Adnify 及其所有源代码、文档、资源文件和相关材料。
+   "Software" refers to Adnify and all its source code, documentation, 
+   resource files, and related materials.
+
+2. "作者" 指 adnaan (adnaan.worker@gmail.com)。
+   "Author" refers to adnaan (adnaan.worker@gmail.com).
+
+3. "商业使用" 指任何以营利为目的的使用，包括但不限于：销售、出租、
+   提供付费服务、集成到商业产品中等。
+   "Commercial Use" means any use for profit, including but not limited to: 
+   selling, renting, providing paid services, integrating into commercial 
+   products, etc.
+
+4. "非商业使用" 指个人学习、研究、教育或非营利组织的内部使用。
+   "Non-Commercial Use" means personal learning, research, education, or 
+   internal use by non-profit organizations.
+
+二、授权范围 / 2. Grant of Rights
+---------------------------------
+在遵守本协议条款的前提下，作者授予您以下权利：
+Subject to compliance with the terms of this Agreement, the Author grants 
+you the following rights:
+
+1. 【非商业使用】您可以自由地：
+   [Non-Commercial Use] You may freely:
+   - 下载、安装和使用本软件
+     Download, install, and use the Software
+   - 复制和分发本软件
+     Copy and distribute the Software
+   - 修改本软件源代码
+     Modify the Software source code
+   - 基于本软件创建衍生作品
+     Create derivative works based on the Software
+
+2. 【商业使用】商业使用必须事先获得作者的书面授权。
+   [Commercial Use] Commercial use requires prior written authorization 
+   from the Author.
+   如需商业授权，请联系 / For commercial licensing, please contact:
+   adnaan.worker@gmail.com
+
+三、必须保留的信息 / 3. Required Attribution
+--------------------------------------------
+无论以何种方式使用、修改或分发本软件，您必须：
+Regardless of how you use, modify, or distribute the Software, you must:
+
+1. 保留软件名称 "Adnify" 的显著标识
+   Retain the prominent display of the software name "Adnify"
+
+2. 保留作者版权声明：Copyright (c) 2025-present adnaan
+   Retain the author's copyright notice: Copyright (c) 2025-present adnaan
+
+3. 保留项目仓库地址 / Retain the project repository URLs:
+   - https://github.com/adnaan-worker/adnify
+   - https://gitee.com/adnaan/adnify
+
+4. 保留本许可协议文件 (LICENSE)
+   Retain this license file (LICENSE)
+
+5. 保留 NOTICE 文件（如果存在）
+   Retain the NOTICE file (if present)
+
+6. 在衍生作品中明确说明原始项目来源
+   Clearly indicate the original project source in derivative works
+
+四、禁止行为 / 4. Restrictions
+------------------------------
+1. 禁止删除、隐藏或修改任何版权声明、作者信息或仓库地址
+   Do not remove, hide, or modify any copyright notices, author information, 
+   or repository URLs
+
+2. 禁止删除、隐藏或修改软件内部（包括但不限于界面、配置文件、
+   关于页面、设置页面等）显示的仓库地址、作者信息和版权声明
+   Do not remove, hide, or modify repository URLs, author information, and 
+   copyright notices displayed within the software (including but not limited 
+   to UI, configuration files, about pages, settings pages, etc.)
+
+3. 禁止将本软件伪装成您的原创作品
+   Do not misrepresent the Software as your original work
+
+4. 禁止在未经授权的情况下进行商业使用
+   Do not use commercially without authorization
+
+5. 禁止使用作者的名称、商标进行产品背书或推广
+   Do not use the Author's name or trademarks for product endorsement or 
+   promotion
+
+6. 禁止将本软件用于任何违法活动
+   Do not use the Software for any illegal activities
+
+五、衍生作品 / 5. Derivative Works
+----------------------------------
+1. 基于本软件的衍生作品必须采用相同或兼容的许可协议
+   Derivative works based on the Software must use the same or a compatible 
+   license
+
+2. 衍生作品必须明确标注 / Derivative works must clearly indicate:
+   - 基于 Adnify 开发 / Built upon Adnify
+   - 原始作者和仓库地址 / Original author and repository URLs
+   - 所做的修改内容 / Modifications made
+
+六、贡献者条款 / 6. Contributor Terms
+-------------------------------------
+1. 向本项目提交的任何贡献（包括但不限于代码、文档、建议等），
+   贡献者同意将其贡献的版权授予作者。
+   By submitting any contribution to this project (including but not limited 
+   to code, documentation, suggestions, etc.), the contributor agrees to 
+   grant the copyright of their contribution to the Author.
+
+2. 贡献者保证其贡献是原创的，或有权进行此授权。
+   Contributors warrant that their contributions are original or that they 
+   have the right to make such grants.
+
+七、专利条款 / 7. Patent Terms
+------------------------------
+1. 本协议不授予任何专利许可。
+   This Agreement does not grant any patent license.
+
+2. 如果您对本软件或其衍生作品提起专利诉讼，您在本协议下的所有权利
+   将自动终止。
+   If you initiate patent litigation against the Software or its derivative 
+   works, all your rights under this Agreement will automatically terminate.
+
+八、商标使用 / 8. Trademark Usage
+---------------------------------
+1. "Adnify" 名称和相关标识是作者的商标。
+   The "Adnify" name and related logos are trademarks of the Author.
+
+2. 未经书面授权，不得将这些商标用于：
+   Without written authorization, these trademarks may not be used for:
+   - 产品或服务的命名 / Naming products or services
+   - 暗示作者背书或赞助 / Implying Author endorsement or sponsorship
+   - 任何可能造成混淆的方式 / Any manner that may cause confusion
+
+3. 允许在以下情况使用商标：
+   Trademark use is permitted in the following cases:
+   - 准确描述本软件的来源 / Accurately describing the origin of the Software
+   - 在衍生作品中注明原始项目 / Crediting the original project in derivative works
+
+九、免责声明 / 9. Disclaimer
+----------------------------
+本软件按"原样"提供，不提供任何明示或暗示的保证，包括但不限于：
+适销性、特定用途适用性和非侵权性的保证。
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR 
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, 
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+
+在任何情况下，作者均不对因使用本软件而产生的任何直接、间接、
+偶然、特殊、惩罚性或后果性损害承担责任。
+
+IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, 
+SPECIAL, PUNITIVE, OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OF THE 
+SOFTWARE.
+
+十、协议终止 / 10. Termination
+------------------------------
+1. 如果您违反本协议的任何条款，您的使用权将自动终止。
+   If you violate any terms of this Agreement, your rights will automatically 
+   terminate.
+
+2. 终止后，您必须停止使用本软件并销毁所有副本。
+   Upon termination, you must cease using the Software and destroy all copies.
+
+3. 本协议的免责声明和责任限制条款在终止后继续有效。
+   The disclaimer and limitation of liability provisions of this Agreement 
+   shall survive termination.
+
+十一、其他条款 / 11. Miscellaneous
+----------------------------------
+1. 本协议受中华人民共和国法律管辖。
+   This Agreement shall be governed by the laws of the People's Republic 
+   of China.
+
+2. 如本协议的任何条款被认定为无效，其余条款仍然有效。
+   If any provision of this Agreement is found to be invalid, the remaining 
+   provisions shall remain in effect.
+
+3. 作者保留随时修改本协议的权利，修改后的协议适用于新版本。
+   The Author reserves the right to modify this Agreement at any time. 
+   Modified agreements apply to new versions.
+
+4. 本协议的中英文版本如有歧义，以中文版本为准。
+   In case of any discrepancy between the Chinese and English versions of 
+   this Agreement, the Chinese version shall prevail.
+
+================================================================================
+                         联系方式 / Contact Information
+================================================================================
+
+商业授权咨询 / Commercial License Inquiry:
+  Email: adnaan.worker@gmail.com
+
+问题反馈 / Issue Report:
+  GitHub: https://github.com/adnaan-worker/adnify/issues
+  Gitee:  https://gitee.com/adnaan/adnify/issues
+
+================================================================================

@@ -1,8 +1,0 @@
-{
-  "stats": [
-    { "value": "10K+", "label": "Active Users", "description": "Developers worldwide using Adnify" },
-    { "value": "23+", "label": "AI Tools", "description": "Built-in tools for code automation" },
-    { "value": "10+", "label": "Language Support", "description": "Programming languages with LSP support" },
-    { "value": "100%", "label": "Open Source", "description": "Free and transparent development" }
-  ]
-}

@@ -1,224 +1,132 @@
-"use client";
+'use client';
 
-import { useState, useEffect } from 'react';
-import Image from 'next/image';
+import { motion, useScroll, useTransform } from 'motion/react';
+import { useRef } from 'react';
+import { Play } from 'lucide-react';
 
-export default function Hero() {
-  const [isLoaded, setIsLoaded] = useState(false);
+interface HeroProps {
+  t: any;
+}
 
-  useEffect(() => {
-    setIsLoaded(true);
-  }, []);
+export default function Hero({ t }: HeroProps) {
+  const containerRef = useRef(null);
+
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ["start start", "end start"]
+  });
+
+  const yContent = useTransform(scrollYProgress, [0, 1], ["0%", "50%"]);
+  const yData = useTransform(scrollYProgress, [0, 1], ["0%", "80%"]);
+  const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-20 overflow-hidden">
-      {/* Aurora Background */}
-      <div className="absolute inset-0">
-        {/* Primary Aurora Orb */}
-        <div 
-          className="aurora-orb aurora-orb-cyan"
-          style={{
-            width: '800px',
-            height: '800px',
-            top: '-20%',
-            left: '-10%',
-            animationDelay: '0s'
-          }}
-        />
+    <section ref={containerRef} className="relative h-screen min-h-[900px] flex items-center overflow-hidden pt-20">
+      
+      <div className="relative z-10 w-full max-w-[1800px] mx-auto px-10 md:px-20 flex flex-col lg:flex-row items-center justify-between">
         
-        {/* Secondary Aurora Orb */}
-        <div 
-          className="aurora-orb aurora-orb-purple"
-          style={{
-            width: '600px',
-            height: '600px',
-            bottom: '-10%',
-            right: '-5%',
-            animationDelay: '-5s'
-          }}
-        />
-        
-        {/* Tertiary Aurora Orb */}
-        <div 
-          className="aurora-orb aurora-orb-magenta"
-          style={{
-            width: '500px',
-            height: '500px',
-            top: '30%',
-            right: '20%',
-            animationDelay: '-10s'
-          }}
-        />
-        
-        {/* Radial Gradient Overlay */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,transparent_0%,var(--background)_70%)]" />
-        
-        {/* Grid Pattern */}
-        <div className="absolute inset-0 opacity-[0.03]" style={{
-          backgroundImage: 'linear-gradient(rgba(255,255,255,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.1) 1px, transparent 1px)',
-          backgroundSize: '60px 60px'
-        }} />
-      </div>
-
-      {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto text-center">
-        {/* Badge */}
-        <div 
-          className={`inline-flex items-center gap-3 px-5 py-2.5 rounded-full glass mb-10 transition-all duration-1000 ${
-            isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-          }`}
+        <motion.div 
+          style={{ y: yContent, opacity }} 
+          className="w-full lg:w-3/5 flex flex-col items-start text-left"
         >
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-aurora-cyan opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-aurora-cyan"></span>
-          </span>
-          <span className="text-sm font-medium text-secondary">
-            100% 使用 Adnify + AI 开发
-          </span>
-        </div>
-
-        {/* Main Heading */}
-        <h1 
-          className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-8 leading-[1.1] font-heading transition-all duration-1000 delay-100 ${
-            isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-          }`}
-        >
-          <span className="text-white">Connect AI</span>
-          <br />
-          <span className="gradient-text-animated">to Your Code.</span>
-        </h1>
-
-        {/* Subtitle */}
-        <p 
-          className={`text-lg sm:text-xl md:text-2xl text-secondary max-w-3xl mx-auto mb-12 leading-relaxed transition-all duration-1000 delay-200 ${
-            isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-          }`}
-        >
-          一个拥有极致视觉体验、深度集成 AI Agent 的
-          <br className="hidden sm:block" />
-          <span className="text-aurora-cyan font-medium">下一代代码编辑器</span>
-        </p>
-
-        {/* CTA Buttons */}
-        <div 
-          className={`flex flex-col sm:flex-row items-center justify-center gap-4 mb-16 transition-all duration-1000 delay-300 ${
-            isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-          }`}
-        >
-          <a 
-            href="https://github.com/adnaan-worker/adnify/releases" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="group btn-primary flex items-center gap-3"
+          <motion.div
+             initial={{ opacity: 0, x: -30 }}
+             animate={{ opacity: 1, x: 0 }}
+             transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
+             className="mb-10"
           >
-            <span className="relative z-10 flex items-center gap-2 font-semibold">
-              Download for Free
-              <svg className="w-5 h-5 group-hover:translate-y-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-              </svg>
+            <div className="px-6 py-2 border border-white/10 backdrop-blur-md rounded-full flex items-center gap-3">
+               <span className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse" />
+               <span className="text-[10px] font-mono tracking-[0.4em] uppercase text-white/50 shadow-sm">
+                 {t.hero.badge}
+               </span>
+            </div>
+          </motion.div>
+
+          <motion.h1 
+            className="text-5xl md:text-7xl lg:text-8xl xl:text-9xl leading-[0.85] font-black uppercase tracking-tighter mb-6"
+            initial={{ opacity: 0, filter: 'blur(30px)', x: -40 }}
+            animate={{ opacity: 1, filter: 'blur(0px)', x: 0 }}
+            transition={{ duration: 1.8, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
+          >
+            <span className="block text-transparent bg-clip-text bg-gradient-to-br from-white via-[#E0E0E0] to-[#555555] drop-shadow-2xl">
+              {t.hero.title}
             </span>
-          </a>
-          
-          <a 
-            href="https://github.com/adnaan-worker/adnify" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="btn-secondary flex items-center gap-2"
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-white/70 via-white/40 to-white/20 italic font-serif tracking-normal mt-2 lg:mt-4">
+              {t.hero.titleSuffix}
+            </span>
+          </motion.h1>
+
+          <motion.p 
+            className="text-base md:text-xl text-white/60 max-w-xl font-medium leading-relaxed mb-12 drop-shadow-lg"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
-            </svg>
-            View on GitHub
-          </a>
-        </div>
-
-        {/* Social Proof */}
-        <div 
-          className={`flex items-center justify-center gap-6 flex-wrap transition-all duration-1000 delay-400 ${
-            isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
-          }`}
-        >
-          <div className="flex items-center gap-2">
-            <div className="flex -space-x-2">
-              {[...Array(4)].map((_, i) => (
-                <div 
-                  key={i} 
-                  className="w-8 h-8 rounded-full border-2 border-background"
-                  style={{
-                    background: `linear-gradient(135deg, ${['#00FFFF', '#7B61FF', '#FF00FF', '#0080FF'][i]}, ${['#7B61FF', '#FF00FF', '#0080FF', '#00FFFF'][i]})`
-                  }}
-                />
-              ))}
-            </div>
-            <span className="text-sm text-muted">2.5k+ Developers</span>
-          </div>
+            {t.hero.subtitle}
+          </motion.p>
           
-          <div className="w-px h-6 bg-border-subtle" />
-          
-          <div className="flex items-center gap-2">
-            <svg className="w-5 h-5 text-amber-400" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-            </svg>
-            <span className="text-sm text-muted">GitHub Trending #1</span>
-          </div>
-          
-          <div className="w-px h-6 bg-border-subtle" />
-          
-          <div className="flex items-center gap-2">
-            <span className="text-sm font-mono text-aurora-cyan">v1.0.0</span>
-            <span className="text-sm text-muted">Latest Release</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Product Screenshot */}
-      <div 
-        className={`relative z-10 w-full max-w-6xl mx-auto mt-20 transition-all duration-1000 delay-500 ${
-          isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-        }`}
-      >
-        <div className="relative rounded-3xl overflow-hidden border-glow">
-          {/* Window Header */}
-          <div className="flex items-center justify-between px-5 py-4 bg-surface-secondary border-b border-border-subtle">
-            <div className="flex items-center gap-3">
-              <div className="flex gap-2">
-                <div className="w-3 h-3 rounded-full bg-red-500/80" />
-                <div className="w-3 h-3 rounded-full bg-amber-500/80" />
-                <div className="w-3 h-3 rounded-full bg-green-500/80" />
+          <motion.div 
+            className="flex flex-col sm:flex-row items-center sm:items-stretch gap-6"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.5, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <a href="https://github.com/adnaan-worker/adnify/releases" target="_blank" rel="noopener noreferrer" className="relative overflow-hidden group h-16 px-12 bg-white text-black font-black text-[11px] uppercase tracking-[0.25em] transition-all flex items-center justify-center">
+              <span className="relative z-10 flex items-center gap-3">
+                {t.hero.cta}
+              </span>
+              <div className="absolute inset-x-0 bottom-0 h-1 bg-black/10 group-hover:bg-black/30 transition-colors" />
+              <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
+            </a>
+            
+            <a href="https://github.com/adnaan-worker/adnify" target="_blank" rel="noopener noreferrer" className="group h-16 flex items-center gap-6 px-4 bg-white/[0.02] border border-white/10 hover:border-white/30 backdrop-blur-md transition-colors duration-500 pr-10">
+              <div className="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center ml-2 border border-white group-hover:scale-110 transition-transform duration-500">
+                 <Play className="w-3 h-3 fill-black ml-0.5" />
               </div>
-              <span className="text-sm text-muted font-mono">Adnify IDE</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <div className="w-3 h-3 rounded-full bg-aurora-cyan/50 animate-pulse" />
-              <span className="text-xs text-aurora-cyan font-mono">AI Active</span>
-            </div>
+              <span className="text-[11px] font-bold tracking-[0.25em] uppercase text-white/60 group-hover:text-white transition-colors">
+                {t.hero.watch}
+              </span>
+            </a>
+          </motion.div>
+        </motion.div>
+
+        <motion.div 
+          style={{ y: yData, opacity }} 
+          className="hidden lg:flex lg:w-2/5 flex-col items-end gap-10 mt-20"
+          initial={{ opacity: 0, x: 40 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 2, delay: 1, ease: [0.16, 1, 0.3, 1] }}
+        >
+          <div className="flex flex-col items-end gap-2 border-r-2 border-white/20 pr-6">
+             <span className="text-[10px] uppercase font-mono tracking-[0.4em] text-white/30 block mb-2">SYSTEM TELEMETRY</span>
+             
+             <div className="flex items-center gap-6 text-right">
+                <div className="flex flex-col">
+                  <span className="text-[9px] font-mono tracking-widest text-white/40">NEURAL ENGINE</span>
+                  <span className="font-mono text-2xl text-white drop-shadow-[0_0_15px_rgba(255,255,255,0.5)]">ONLINE</span>
+                </div>
+                <div className="w-14 h-14 border border-white/10 rounded-full flex items-center justify-center relative backdrop-blur-sm bg-black/20">
+                   <div className="absolute inset-1 border border-white/40 border-t-transparent rounded-full animate-[spin_3s_linear_infinite]" />
+                   <div className="absolute inset-3 border border-white/20 border-b-transparent border-l-transparent rounded-full animate-[spin_2s_linear_infinite_reverse]" />
+                   <div className="w-1.5 h-1.5 rounded-full bg-white shadow-[0_0_10px_white]" />
+                </div>
+             </div>
+             
+             <div className="w-full h-px bg-gradient-to-l from-white/20 to-transparent my-4" />
+             
+             <div className="flex items-center gap-6 text-[10px] font-mono tracking-widest text-white/50">
+               <span>[LATENCY] <span className="text-white ml-2">12ms</span></span>
+               <span>[MEM] <span className="text-white ml-2">24.5TB</span></span>
+             </div>
           </div>
-          
-          {/* Screenshot */}
-          <div className="relative aspect-[16/9] bg-background-elevated">
-            <Image 
-              src="/images/hero-screenshot.png" 
-              alt="Adnify IDE 主界面" 
-              fill 
-              className="object-contain"
-              priority
-            />
-          </div>
-        </div>
-        
-        {/* Glow Effect Under Screenshot */}
-        <div className="absolute -inset-4 bg-gradient-to-r from-aurora-cyan/10 via-aurora-purple/10 to-aurora-magenta/10 blur-3xl -z-10" />
+        </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-10 animate-float">
-        <div className="flex flex-col items-center gap-2">
-          <span className="text-xs text-muted">Scroll to explore</span>
-          <svg className="w-6 h-6 text-aurora-cyan animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-          </svg>
-        </div>
+      <div className="absolute bottom-12 left-10 md:left-20 flex flex-col items-center opacity-40">
+        <div className="w-px h-20 bg-gradient-to-b from-white to-transparent" />
       </div>
+
     </section>
   );
 }
