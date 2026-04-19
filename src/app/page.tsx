@@ -7,7 +7,10 @@ import Hero from '../components/Hero';
 import Features from '../components/Features';
 import HorizontalShowcase from '../components/HorizontalShowcase';
 import Stats from '../components/Stats';
+import TechStack from '../components/TechStack';
+import QuickStart from '../components/QuickStart';
 import Contributors from '../components/Contributors';
+import Community from '../components/Community';
 import Footer from '../components/Footer';
 import GlobalBackground from '../components/GlobalBackground';
 import { en, zh } from '../lib/i18n';
@@ -119,7 +122,13 @@ export default function Home() {
         
         <Stats t={t} />
 
+        <TechStack lang={lang} />
+
+        <QuickStart lang={lang} />
+
         <Contributors lang={lang} />
+
+        <Community lang={lang} />
 
         {/* Final CTA */}
         <section className="py-64 px-10 md:px-20 text-center relative overflow-hidden bg-black/80 backdrop-blur-xl border-t border-white/5">
