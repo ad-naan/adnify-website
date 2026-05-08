@@ -5,7 +5,7 @@
 > **Connect AI to Your Code.**
 > A next-generation code editor with stunning visual experience and deeply integrated AI Agent.
 
-[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/adnaan-worker/Adnify) ![License](https://img.shields.io/badge/license-Custom%20License-blue.svg) ![Electron](https://img.shields.io/badge/Electron-39.0-blueviolet) ![React](https://img.shields.io/badge/React-18-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/ad-naan/Adnify) ![License](https://img.shields.io/badge/license-Custom%20License-blue.svg) ![Electron](https://img.shields.io/badge/Electron-39.0-blueviolet) ![React](https://img.shields.io/badge/React-18-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue)
 
 Adnify is more than just an editor—it's your **intelligent programming companion**. It replicates and surpasses traditional IDE experiences, blending Cyberpunk glassmorphism design with a powerful built-in AI Agent that supports full-process automation from code generation to file operations.
 
@@ -23,7 +23,7 @@ Join our community to discuss Adnify usage and development!
 | ![WeChat Group QR](images/wechat-group.png) | ![QQ Group QR](images/qq-group.png) | ![Author WeChat](images/wechat-author.png) |
 | Scan to join WeChat group | QQ Group: `1076926858` | WeChat ID: `adnaan_worker` |
 
-> 💡 For issues or suggestions, submit them on [Gitee Issues](https://gitee.com/adnaan/adnify/issues) or [Github Issues](https://github.com/adnaan-worker/adnify/issues)
+> 💡 For issues or suggestions, submit them on [Gitee Issues](https://gitee.com/adnaan/adnify/issues) or [Github Issues](https://github.com/ad-naan/adnify/issues)
 
 ---
 
@@ -583,7 +583,7 @@ adnify/
 
 Many thanks to all the developers who have contributed to Adnify! You guys are the best 🎉
 
-<a href="https://github.com/adnaan-worker"><img src="https://github.com/adnaan-worker.png" width="50" height="50" style="border-radius:50%" alt="adnaan"/></a>
+<a href="https://github.com/ad-naan"><img src="https://github.com/ad-naan.png" width="50" height="50" style="border-radius:50%" alt="adnaan"/></a>
 <a href="https://github.com/kerwin2046"><img src="https://github.com/kerwin2046.png" width="50" height="50" style="border-radius:50%" alt="kerwin"/></a>
 <a href="https://github.com/cniu6"><img src="https://github.com/cniu6.png" width="50" height="50" style="border-radius:50%" alt="cniu6"/></a>
 <a href="https://github.com/tss-tss"><img src="https://github.com/tss-tss.png" width="50" height="50" style="border-radius:50%" alt="晨曦"/></a>

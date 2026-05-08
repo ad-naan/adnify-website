@@ -30,8 +30,8 @@ export default function Navbar({ lang, setLang, t }: NavbarProps) {
           
           {/* Desktop Links */}
           <div className="hidden lg:flex items-center gap-10">
-            <a href="https://github.com/adnaan-worker/adnify" target="_blank" rel="noopener noreferrer" className="text-[11px] font-bold tracking-[0.2em] text-white/40 hover:text-white transition-opacity uppercase">{t.nav.docs}</a>
-            <a href="https://github.com/adnaan-worker/adnify/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer" className="text-[11px] font-bold tracking-[0.2em] text-white/40 hover:text-white transition-opacity uppercase">Changelog</a>
+            <a href="https://github.com/ad-naan/adnify" target="_blank" rel="noopener noreferrer" className="text-[11px] font-bold tracking-[0.2em] text-white/40 hover:text-white transition-opacity uppercase">{t.nav.docs}</a>
+            <a href="https://github.com/ad-naan/adnify/blob/main/CHANGELOG.md" target="_blank" rel="noopener noreferrer" className="text-[11px] font-bold tracking-[0.2em] text-white/40 hover:text-white transition-opacity uppercase">Changelog</a>
             <a href="http://www.adnaan.site" target="_blank" rel="noopener noreferrer" className="text-[11px] font-bold tracking-[0.2em] text-white/40 hover:text-white transition-opacity uppercase">Blog</a>
           </div>
         </div>
@@ -44,7 +44,7 @@ export default function Navbar({ lang, setLang, t }: NavbarProps) {
             >
               [ {lang === 'en' ? 'ZH' : 'EN'} ]
             </button>
-            <a href="https://github.com/adnaan-worker/adnify/releases" target="_blank" rel="noopener noreferrer" className="relative group px-8 py-3 bg-white/5 backdrop-blur-md border border-white/10 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-500 overflow-hidden">
+            <a href="https://github.com/ad-naan/adnify/releases" target="_blank" rel="noopener noreferrer" className="relative group px-8 py-3 bg-white/5 backdrop-blur-md border border-white/10 text-[11px] font-bold uppercase tracking-[0.2em] hover:bg-white hover:text-black transition-all duration-500 overflow-hidden">
               <span className="relative z-10 flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse group-hover:bg-black transition-colors" />
                 {t.nav.cta}
@@ -76,7 +76,7 @@ export default function Navbar({ lang, setLang, t }: NavbarProps) {
             <a href="#features" className="text-4xl font-black uppercase tracking-tighter" onClick={() => setIsOpen(false)}>{t.nav.product}</a>
             <a href="#solutions" className="text-4xl font-black uppercase tracking-tighter" onClick={() => setIsOpen(false)}>{t.nav.engine}</a>
             <a href="#pricing" className="text-4xl font-black uppercase tracking-tighter" onClick={() => setIsOpen(false)}>{t.nav.pricing}</a>
-            <a href="https://github.com/adnaan-worker/adnify" target="_blank" rel="noopener noreferrer" className="text-4xl font-black uppercase tracking-tighter" onClick={() => setIsOpen(false)}>{t.nav.docs}</a>
+            <a href="https://github.com/ad-naan/adnify" target="_blank" rel="noopener noreferrer" className="text-4xl font-black uppercase tracking-tighter" onClick={() => setIsOpen(false)}>{t.nav.docs}</a>
             
             <div className="mt-auto flex flex-col gap-4">
               <button 
@@ -86,7 +86,7 @@ export default function Navbar({ lang, setLang, t }: NavbarProps) {
                 <Languages className="w-4 h-4" />
                 {lang === 'en' ? '中文' : 'ENGLISH'}
               </button>
-              <a href="https://github.com/adnaan-worker/adnify/releases" target="_blank" rel="noopener noreferrer" className="w-full py-4 bg-white text-black rounded-full text-sm font-bold uppercase text-center">{t.nav.cta}</a>
+              <a href="https://github.com/ad-naan/adnify/releases" target="_blank" rel="noopener noreferrer" className="w-full py-4 bg-white text-black rounded-full text-sm font-bold uppercase text-center">{t.nav.cta}</a>
             </div>
           </motion.div>
         )}

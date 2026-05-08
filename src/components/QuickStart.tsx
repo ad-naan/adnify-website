@@ -170,7 +170,7 @@ export default function QuickStart({ lang }: QuickStartProps) {
           className="text-center mt-16"
         >
           <a
-            href="https://github.com/adnaan-worker/adnify/releases"
+            href="https://github.com/ad-naan/adnify/releases"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-4 px-16 py-6 bg-white text-black font-black uppercase tracking-[0.2em] hover:bg-zinc-200 transition-all transform hover:scale-105 active:scale-95 group"

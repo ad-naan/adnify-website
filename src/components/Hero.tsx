@@ -72,7 +72,7 @@ export default function Hero({ t }: HeroProps) {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1.5, delay: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
-            <a href="https://github.com/adnaan-worker/adnify/releases" target="_blank" rel="noopener noreferrer" className="relative overflow-hidden group h-16 px-12 bg-white text-black font-black text-[11px] uppercase tracking-[0.25em] transition-all flex items-center justify-center">
+            <a href="https://github.com/ad-naan/adnify/releases" target="_blank" rel="noopener noreferrer" className="relative overflow-hidden group h-16 px-12 bg-white text-black font-black text-[11px] uppercase tracking-[0.25em] transition-all flex items-center justify-center">
               <span className="relative z-10 flex items-center gap-3">
                 {t.hero.cta}
               </span>
@@ -80,7 +80,7 @@ export default function Hero({ t }: HeroProps) {
               <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out" />
             </a>
             
-            <a href="https://github.com/adnaan-worker/adnify" target="_blank" rel="noopener noreferrer" className="group h-16 flex items-center gap-6 px-4 bg-white/[0.02] border border-white/10 hover:border-white/30 backdrop-blur-md transition-colors duration-500 pr-10">
+            <a href="https://github.com/ad-naan/adnify" target="_blank" rel="noopener noreferrer" className="group h-16 flex items-center gap-6 px-4 bg-white/[0.02] border border-white/10 hover:border-white/30 backdrop-blur-md transition-colors duration-500 pr-10">
               <div className="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center ml-2 border border-white group-hover:scale-110 transition-transform duration-500">
                  <Play className="w-3 h-3 fill-black ml-0.5" />
               </div>

@@ -10,9 +10,9 @@ interface ContributorsProps {
 
 const CONTRIBUTORS = [
   {
-    username: 'adnaan-worker',
+    username: 'ad-naan',
     name: 'Adnaan',
-    avatar: 'https://github.com/adnaan-worker.png',
+    avatar: 'https://github.com/ad-naan.png',
     role: { en: 'Core Architect', zh: '核心架构师' },
     contributions: { en: 'LLM Engine, Agent System, UI/UX', zh: 'LLM 引擎、Agent 系统、UI/UX' }
   },
@@ -116,7 +116,7 @@ export default function Contributors({ lang }: ContributorsProps) {
           className="text-center"
         >
           <a
-            href="https://github.com/adnaan-worker/adnify/graphs/contributors"
+            href="https://github.com/ad-naan/adnify/graphs/contributors"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-4 px-12 py-6 border border-white/10 hover:border-white/30 bg-white/[0.02] hover:bg-white/[0.05] backdrop-blur-md transition-all duration-500 group"

@@ -142,10 +142,10 @@ export default function Home() {
                {lang === 'en' ? 'The era of manual boilerplate is dead. Claim your early access to the neural IDE.' : '繁杂代码的时代已经终结。立即获取您的下一代神经计算 IDE 内测资格。'}
              </p>
              <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-                <a href="https://github.com/adnaan-worker/adnify/releases" target="_blank" rel="noopener noreferrer" className="px-16 py-6 bg-white text-black font-black uppercase tracking-[0.2em] hover:bg-zinc-200 transition-all transform hover:scale-105 active:scale-95">
+                <a href="https://github.com/ad-naan/adnify/releases" target="_blank" rel="noopener noreferrer" className="px-16 py-6 bg-white text-black font-black uppercase tracking-[0.2em] hover:bg-zinc-200 transition-all transform hover:scale-105 active:scale-95">
                   {t.nav.cta}
                 </a>
-                <a href="https://github.com/adnaan-worker/adnify" target="_blank" rel="noopener noreferrer" className="px-16 py-6 border border-white/20 font-bold uppercase tracking-[0.2em] text-white/60 hover:text-white hover:bg-white/5 transition-all">
+                <a href="https://github.com/ad-naan/adnify" target="_blank" rel="noopener noreferrer" className="px-16 py-6 border border-white/20 font-bold uppercase tracking-[0.2em] text-white/60 hover:text-white hover:bg-white/5 transition-all">
                   {lang === 'en' ? 'View on GitHub' : '查看 GitHub'}
                 </a>
              </div>

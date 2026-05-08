@@ -26,7 +26,7 @@ export default function Footer({ lang, t }: FooterProps) {
             </p>
             <div className="flex items-center gap-6 pt-6 border-t border-white/5 inline-flex w-full">
               <SocialLink icon={Globe} href="http://www.adnaan.site" />
-              <SocialLink icon={Github} href="https://github.com/adnaan-worker/adnify" />
+              <SocialLink icon={Github} href="https://github.com/ad-naan/adnify" />
               <SocialLink icon={Mail} href="mailto:adnaan.worker@gmail.com" />
             </div>
           </div>
@@ -34,18 +34,18 @@ export default function Footer({ lang, t }: FooterProps) {
           <div className="lg:col-span-1 lg:pl-10">
             <h5 className="text-[10px] font-mono font-bold text-white/30 mb-8 tracking-[0.4em] uppercase">{lang === 'en' ? 'Resources' : '资源'}</h5>
             <ul className="space-y-4 text-white/50 text-sm font-bold tracking-widest uppercase">
-              <li><FooterLink href="https://github.com/adnaan-worker/adnify">{lang === 'en' ? 'Documentation' : '文档'}</FooterLink></li>
-              <li><FooterLink href="https://github.com/adnaan-worker/adnify/releases">{lang === 'en' ? 'Download' : '下载'}</FooterLink></li>
-              <li><FooterLink href="https://github.com/adnaan-worker/adnify/issues">{lang === 'en' ? 'Issues' : '问题反馈'}</FooterLink></li>
-              <li><FooterLink href="https://github.com/adnaan-worker/adnify/blob/main/CHANGELOG.md">{lang === 'en' ? 'Changelog' : '更新日志'}</FooterLink></li>
+              <li><FooterLink href="https://github.com/ad-naan/adnify">{lang === 'en' ? 'Documentation' : '文档'}</FooterLink></li>
+              <li><FooterLink href="https://github.com/ad-naan/adnify/releases">{lang === 'en' ? 'Download' : '下载'}</FooterLink></li>
+              <li><FooterLink href="https://github.com/ad-naan/adnify/issues">{lang === 'en' ? 'Issues' : '问题反馈'}</FooterLink></li>
+              <li><FooterLink href="https://github.com/ad-naan/adnify/blob/main/CHANGELOG.md">{lang === 'en' ? 'Changelog' : '更新日志'}</FooterLink></li>
             </ul>
           </div>
 
           <div className="lg:col-span-1">
             <h5 className="text-[10px] font-mono font-bold text-white/30 mb-8 tracking-[0.4em] uppercase">{lang === 'en' ? 'Community' : '社区'}</h5>
             <ul className="space-y-4 text-white/50 text-sm font-bold tracking-widest uppercase">
-              <li><FooterLink href="https://github.com/adnaan-worker/adnify/blob/main/CONTRIBUTING.md">{lang === 'en' ? 'Contributing' : '贡献指南'}</FooterLink></li>
-              <li><FooterLink href="https://github.com/adnaan-worker/adnify/blob/main/CODE_OF_CONDUCT.md">{lang === 'en' ? 'Code of Conduct' : '行为准则'}</FooterLink></li>
+              <li><FooterLink href="https://github.com/ad-naan/adnify/blob/main/CONTRIBUTING.md">{lang === 'en' ? 'Contributing' : '贡献指南'}</FooterLink></li>
+              <li><FooterLink href="https://github.com/ad-naan/adnify/blob/main/CODE_OF_CONDUCT.md">{lang === 'en' ? 'Code of Conduct' : '行为准则'}</FooterLink></li>
               <li><FooterLink href="#">{lang === 'en' ? 'WeChat Group' : '微信群'}</FooterLink></li>
               <li><FooterLink href="#">{lang === 'en' ? 'QQ Group: 1076926858' : 'QQ群: 1076926858'}</FooterLink></li>
             </ul>
@@ -70,7 +70,7 @@ export default function Footer({ lang, t }: FooterProps) {
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-[10px] font-bold uppercase tracking-[0.3em] text-white/20">
           <p>{t.footer.rights}</p>
           <div className="flex gap-12">
-            <FooterLink href="https://github.com/adnaan-worker/adnify/blob/main/LICENSE">{lang === 'en' ? 'License' : '许可证'}</FooterLink>
+            <FooterLink href="https://github.com/ad-naan/adnify/blob/main/LICENSE">{lang === 'en' ? 'License' : '许可证'}</FooterLink>
             <FooterLink href="#">{lang === 'en' ? 'Privacy' : '隐私政策'}</FooterLink>
           </div>
         </div>

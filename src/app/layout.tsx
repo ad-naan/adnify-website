@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Adnify - Connect AI to Your Code",
   description: "一个拥有极致视觉体验、深度集成 AI Agent 的下一代代码编辑器。The AI-first code editor with stunning visual experience and deeply integrated AI Agent.",
   keywords: ["AI", "code editor", "IDE", "developer tools", "programming", "AI Agent", "Electron", "Monaco Editor"],
-  authors: [{ name: "adnaan", url: "https://github.com/adnaan-worker/adnify" }],
+  authors: [{ name: "adnaan", url: "https://github.com/ad-naan/adnify" }],
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: "一个拥有极致视觉体验、深度集成 AI Agent 的下一代代码编辑器。",
     images: [
       {
-        url: "https://github.com/adnaan-worker/adnify/raw/master/images/main.png",
+        url: "https://github.com/ad-naan/adnify/raw/master/images/main.png",
         width: 1200,
         height: 630,
         alt: "Adnify - AI Code Editor",
@@ -30,9 +30,9 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Adnify - Connect AI to Your Code",
     description: "一个拥有极致视觉体验、深度集成 AI Agent 的下一代代码编辑器。",
-    images: ["https://github.com/adnaan-worker/adnify/raw/master/images/main.png"],
+    images: ["https://github.com/ad-naan/adnify/raw/master/images/main.png"],
   },
-  metadataBase: new URL("https://adnaan-worker.github.io"),
+  metadataBase: new URL("https://ad-naan.github.io"),
 };
 
 export default function RootLayout({

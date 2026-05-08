@@ -178,7 +178,7 @@ export default function Community({ lang }: CommunityProps) {
               </div>
 
               <a
-                href="https://github.com/adnaan-worker/adnify"
+                href="https://github.com/ad-naan/adnify"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-8 py-4 bg-white text-black font-black uppercase tracking-[0.2em] text-xs hover:bg-zinc-200 transition-all transform hover:scale-105 active:scale-95"
