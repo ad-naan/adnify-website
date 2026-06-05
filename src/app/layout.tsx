@@ -46,11 +46,11 @@ export default function RootLayout({
       <body className="antialiased bg-black text-white selection:bg-white/20">
         {children}
         <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2158925493674970"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
+  async
+  src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2158925493674970"
+  crossOrigin="anonymous"
+  strategy="afterInteractive"
+/>
       </body>
     </html>
   );
