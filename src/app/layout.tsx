@@ -34,6 +34,9 @@ export const metadata: Metadata = {
     images: ["https://github.com/ad-naan/adnify/raw/master/images/main.png"],
   },
   metadataBase: new URL("https://ad-naan.github.io"),
+  other: {
+    'google-adsense-account': 'ca-pub-2158925493674970',
+  },
 };
 
 export default function RootLayout({
